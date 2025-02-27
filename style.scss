@@ -57,15 +57,26 @@ html{
         overflow: hidden;
         padding-bottom: 1rem;
         position: relative;
+        justify-content: center;
         &::after{
             content:"";
             height: 100%;
             width: 40%;
             position: absolute;
-background-image: linear-gradient(to right, #0E0E0E,transparent);            top: 0;
+            background-image: linear-gradient(to right, #0E0E0E,transparent);
+            top: 0;
             left: 0;
         }
-       
+        &::before{
+            content:"";
+            height: 100%;
+            width: 40%;
+            position: absolute;
+            background-image: linear-gradient(to left, #0E0E0E,transparent);
+            top: 0;
+            right: 0;
+            z-index: 1;
+        }
         .text{
             display: flex;
             gap: 2rem;
